@@ -43,6 +43,28 @@ The following pod updates are available:
 - RxSwift 4.5.0 -> 4.5.0 (latest version 5.0.0)
 ```
 
+Our objective will be to retrieve `Alamofire`'s  current and latest version numbers with the `alamofire` lane in the following Fastfile.
+
+### Our Fastfile:
+
+```ruby
+fastlane_version "2.131.0"
+
+default_platform :ios
+
+platform :ios do
+
+  desc "Check Alamofire version"
+  lane :alamofire do
+    parse_pod_dependencies()
+    pods = lane_context[SharedValues::POD_ANALYZER_RESULTS]
+    alamofire_pod = pods.detect { |pod| pod.pod_name == 'Alamofire' }
+    puts("Alamofire current version: #{alamofire_pod.current_version}")
+    puts("Alamofire latest version: #{alamofire_pod.latest}")
+  end
+end
+```
+
 ## Issues and Feedback
 
 For any other issues and feedback about this plugin, please submit it to this repository.
