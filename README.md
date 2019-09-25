@@ -1,6 +1,12 @@
-# ios_dependency_parser plugin
-
-[![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-ios_dependency_parser)
+<p align="center">
+    <img width="171" height="184" src="ios_dependency_parser.png" />
+    <h1 align="center">ios_dependency_parser plugin</h1>
+</p>
+<p align="center">
+    <a href="https://rubygems.org/gems/fastlane-plugin-ios_dependency_parser"><img src="https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg" /></a>
+    <a href="https://rubygems.org/gems/fastlane-plugin-ios_dependency_parser"><img src="https://badge.fury.io/rb/fastlane-plugin-ios_dependency_parser.svg" /></a>
+    <a href="https://rubygems.org/gems/fastlane-plugin-ios_dependency_parser"><img src="http://ruby-gem-downloads-badge.herokuapp.com/fastlane-plugin-ios_dependency_parser?type=total" /></a>
+</p>
 
 ## Getting Started
 
@@ -35,21 +41,6 @@ The following pod updates are available:
 - Crashlytics 3.13.1 -> 3.13.1 (latest version 3.14.0)
 - GoogleMaps 3.2.0 -> 3.2.0 (latest version 3.4.0)
 - RxSwift 4.5.0 -> 4.5.0 (latest version 5.0.0)
-```
-
-
-
-## Run tests for this plugin
-
-To run both the tests, and code style validation, run
-
-```
-rake
-```
-
-To automatically fix many of the styling issues, use
-```
-rubocop -a
 ```
 
 ## Issues and Feedback
